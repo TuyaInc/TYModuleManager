@@ -1,0 +1,3 @@
+target 'TYModuleManager_Example' do
+  pod 'TYModuleManager', :path => '../'
+end

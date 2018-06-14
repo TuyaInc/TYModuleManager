@@ -1,0 +1,16 @@
+PODS:
+  - TYModuleManager (0.0.1)
+
+DEPENDENCIES:
+  - TYModuleManager (from `../`)
+
+EXTERNAL SOURCES:
+  TYModuleManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TYModuleManager: f89aa835f42242abe1cd2be6d7f871ae3dbbafb5
+
+PODFILE CHECKSUM: a80e87821a6052f4c2023a66b9709b408ee5c774
+
+COCOAPODS: 1.5.0
