@@ -8,7 +8,7 @@
 
 #import "TYTestModuleImpl.h"
 
-#import <TYModuleManager/TYModuleProtocol.h>
+#import <TYModuleManager/TYModulPublic.h>
 
 @interface TYTestModuleImpl() <TYModuleProtocol>
 
