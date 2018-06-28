@@ -6,14 +6,13 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'isfang' => 'fangdong@tuyasmart.com' }
   s.source           = { :git => 'https://github.com/TuyaInc/TYModuleManager.git', :tag => s.version.to_s }
+  
+  s.source_files = 'TYModuleManager/Headers/Public/**/*'
 
   s.ios.deployment_target = '8.0'
 
-  #s.source_files = 'TYModuleManager/Classes/**/*'
-  #s.resources = ['TYModuleManager/Assets/*.{png,xib,plist,xcassets,bundle}']
-
   s.frameworks = 'UIKit', 'Foundation'
   
-  s.vendored_frameworks  = 'TYModuleManager/TYModuleManager.framework'
+  s.vendored_library = 'TYModuleManager/libTYModuleManager.a'
 
 end
