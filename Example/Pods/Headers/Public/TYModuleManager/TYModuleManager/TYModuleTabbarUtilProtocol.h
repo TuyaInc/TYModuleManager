@@ -1,1 +1,0 @@
-../../../../../../TYModuleManager/TYModuleManager.framework/Versions/A/Headers/TYModuleTabbarUtilProtocol.h

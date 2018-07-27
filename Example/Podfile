@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/TuyaInc/TYPublicSpecs.git'
+
 target 'TYModuleManager_Example' do
   pod 'TYModuleManager', :path => '../'
 end

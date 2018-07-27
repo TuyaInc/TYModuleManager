@@ -12,20 +12,80 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15A7102C8431AF3A1A32D3EAADDC8AF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		049C214EB3F14182158F44F8DF1DDDD4 /* TYMainViewControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYMainViewControllerProtocol.h; path = TYModuleManager/Headers/TYMainViewControllerProtocol.h; sourceTree = "<group>"; };
+		04B6FA335A134086BBCC6BA18978FB55 /* TYModuleManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TYModuleManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		143E9A78E9873647DCE5E4AC917AFB7A /* TYModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleProtocol.h; path = TYModuleManager/Headers/TYModuleProtocol.h; sourceTree = "<group>"; };
+		158EAB354ABB15BF1D501E10CF108025 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1635419AB4CED4018EA00823CB18EC5E /* TYModulPublic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModulPublic.h; path = TYModuleManager/Headers/TYModulPublic.h; sourceTree = "<group>"; };
+		1A7F3E674C87A5D0834D7D5CB2839221 /* TYModuleTabbarUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTabbarUtil.h; path = TYModuleManager/Headers/TYModuleTabbarUtil.h; sourceTree = "<group>"; };
+		1AF9C4F7665F0EFBC560C2DFEF4CFEF7 /* TYModuleTaskManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTaskManager.h; path = TYModuleManager/Headers/TYModuleTaskManager.h; sourceTree = "<group>"; };
 		1B4B8D034DCD96BD15AB1F1FC8D01D84 /* Pods-TYModuleManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYModuleManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		21BD72339D72618A62158A90041796E4 /* Pods-TYModuleManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TYModuleManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3FDEAA05573C84DD0459625929023E9A /* TYModuleManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TYModuleManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		22D673E8053B92FA70283242CA83D900 /* TYSmartSceneProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYSmartSceneProtocol.h; path = TYModuleServices/Classes/TYSmartSceneProtocol.h; sourceTree = "<group>"; };
+		23E32D46ADAF26355CB6D3ECDBF28B95 /* TYTabBarViewControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabBarViewControllerProtocol.h; path = TYModuleManager/Headers/TYTabBarViewControllerProtocol.h; sourceTree = "<group>"; };
+		2402E5E78F6AA335AACD495E49E0FD78 /* TYModuleService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleService.h; path = TYModuleManager/Headers/TYModuleService.h; sourceTree = "<group>"; };
+		280EE537E97739B66C20F712A1DAF5E6 /* TYModuleManagerContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleManagerContext.h; path = TYModuleManager/Headers/TYModuleManagerContext.h; sourceTree = "<group>"; };
+		281288DA4CF3E7B35034AA70A225C671 /* TYLoginProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYLoginProtocol.h; path = TYModuleServices/Classes/TYLoginProtocol.h; sourceTree = "<group>"; };
+		2A1EA6D6C0CBC4498BAC00453744C1ED /* TYCameraProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYCameraProtocol.h; path = TYModuleServices/Classes/TYCameraProtocol.h; sourceTree = "<group>"; };
+		2D26B155FEA163482E068FFDCFAADB41 /* TYModuleRouterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleRouterProtocol.h; path = TYModuleManager/Headers/TYModuleRouterProtocol.h; sourceTree = "<group>"; };
+		2FBA357629AFFA91314F0DF8A856C5CC /* TYPanelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYPanelProtocol.h; path = TYModuleServices/Classes/TYPanelProtocol.h; sourceTree = "<group>"; };
+		32B8EDA7502EFC0D2FAED2BFEE99DCFE /* TYModuleServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleServices.h; path = TYModuleServices/Classes/TYModuleServices.h; sourceTree = "<group>"; };
+		3778889FD47D6C02C18CE6177766B08C /* TYModuleCommonConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleCommonConstant.h; path = TYModuleManager/Headers/TYModuleCommonConstant.h; sourceTree = "<group>"; };
+		3E6762F5412E64398B73D06F0008B5FE /* TYModuleApplicationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleApplicationManager.h; path = TYModuleManager/Headers/TYModuleApplicationManager.h; sourceTree = "<group>"; };
+		45DDDAA9BE8BA63D7B825F9EBE218011 /* TYModuleMainLoginProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleMainLoginProtocol.h; path = TYModuleManager/Headers/TYModuleMainLoginProtocol.h; sourceTree = "<group>"; };
 		4CC019F78984D4DE7E108D678FA392EF /* Pods-TYModuleManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYModuleManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		50FBB7AEF16D578FD76AFFF76BA0982E /* libTYModuleManager.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libTYModuleManager.a; path = TYModuleManager/libTYModuleManager.a; sourceTree = "<group>"; };
+		5581F0B0C195980B51FD7F652863B398 /* TYLifeCycleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYLifeCycleManager.h; path = TYModuleManager/Headers/TYLifeCycleManager.h; sourceTree = "<group>"; };
+		579069C7A6EA0CE86B8B060257B45595 /* TYModuleTabManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTabManager.h; path = TYModuleManager/Headers/TYModuleTabManager.h; sourceTree = "<group>"; };
+		58055DAED45C011F4487D2B926469BA7 /* TYMainViewControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYMainViewControllerImpl.h; path = TYModuleManager/Headers/TYMainViewControllerImpl.h; sourceTree = "<group>"; };
+		5D4281AD573A11119AE8E54838AA6151 /* TYModuleTabbarUtilProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTabbarUtilProtocol.h; path = TYModuleManager/Headers/TYModuleTabbarUtilProtocol.h; sourceTree = "<group>"; };
+		62002D89B5C7230DB9A4AD166A0AEA37 /* TYModuleServiceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleServiceProtocol.h; path = TYModuleManager/Headers/TYModuleServiceProtocol.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6E79794A05D25EFE2FD505689B9DEDF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6B9BC0656C4AF1626564933C43E976DC /* TYModuleManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleManagerProtocol.h; path = TYModuleManager/Headers/TYModuleManagerProtocol.h; sourceTree = "<group>"; };
+		6CBC5492F481CDBFAE730CFA0CA42EB1 /* TYModuleTabbarMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTabbarMapping.h; path = TYModuleManager/Headers/TYModuleTabbarMapping.h; sourceTree = "<group>"; };
+		6D6D4F7B81F15E6499494DF17D388CB5 /* TYFamilyProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYFamilyProtocol.h; path = TYModuleServices/Classes/TYFamilyProtocol.h; sourceTree = "<group>"; };
+		6FCFAA866DA460206C95C88E4C94C2B3 /* TYAppleReviewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYAppleReviewProtocol.h; path = TYModuleServices/Classes/TYAppleReviewProtocol.h; sourceTree = "<group>"; };
+		72711CC100AB8243A3423E2125AB4BC8 /* TYModuleAppDelegateProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleAppDelegateProtocol.h; path = TYModuleManager/Headers/TYModuleAppDelegateProtocol.h; sourceTree = "<group>"; };
+		75B886C7CE943C3714CABC89BDDA44EB /* TYModuleLifeCycleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleLifeCycleProtocol.h; path = TYModuleManager/Headers/TYModuleLifeCycleProtocol.h; sourceTree = "<group>"; };
+		84AA563B94A2C4981FFB1A5551488835 /* TYModuleAsyncTaskAnalyse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleAsyncTaskAnalyse.h; path = TYModuleManager/Headers/TYModuleAsyncTaskAnalyse.h; sourceTree = "<group>"; };
+		86EBD20E6B56108E0BEDE600249D0922 /* TYModuleTabProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTabProtocol.h; path = TYModuleManager/Headers/TYModuleTabProtocol.h; sourceTree = "<group>"; };
+		8747D1478D1BCC9F9D8A1C9C00C78EF6 /* TYMessageCenterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYMessageCenterProtocol.h; path = TYModuleServices/Classes/TYMessageCenterProtocol.h; sourceTree = "<group>"; };
+		87A0F99AB40A0F6FA80B43A6B502C97E /* TYTaskProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTaskProtocol.h; path = TYModuleManager/Headers/TYTaskProtocol.h; sourceTree = "<group>"; };
 		88B6771505970975C4F1725FD8ACB773 /* Pods-TYModuleManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYModuleManager_Example-resources.sh"; sourceTree = "<group>"; };
 		8A3E2C31C2D1648714DE71C1B102250D /* Pods-TYModuleManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYModuleManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8B268B123A6F59279548513B081E5F34 /* TYModuleApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleApplication.h; path = TYModuleManager/Headers/TYModuleApplication.h; sourceTree = "<group>"; };
+		8EFBD6252F2DF390E03D0C85B000C2B3 /* TYRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYRoute.h; path = TYModuleManager/Headers/TYRoute.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A715F31E31570D943761945BDAA8775F /* TYUserCenterConfigProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYUserCenterConfigProtocol.h; path = TYModuleServices/Classes/TYUserCenterConfigProtocol.h; sourceTree = "<group>"; };
 		A89BAAB1908760F9D4340D669F539477 /* libPods-TYModuleManager_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TYModuleManager_Example.a"; path = "libPods-TYModuleManager_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8B1EF5D35A580AA5445F33EA982CAC2 /* TYFeedBackProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYFeedBackProtocol.h; path = TYModuleServices/Classes/TYFeedBackProtocol.h; sourceTree = "<group>"; };
+		A990B38C1369DC0DBDCD621727C1F00A /* TYModuleUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleUtils.h; path = TYModuleManager/Headers/TYModuleUtils.h; sourceTree = "<group>"; };
+		AB49921539745360F1FDDBA0DC7D028E /* TYModuleConfigManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleConfigManager.h; path = TYModuleManager/Headers/TYModuleConfigManager.h; sourceTree = "<group>"; };
 		ABCFC1160335DE866A53CCC89A9359E2 /* Pods-TYModuleManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TYModuleManager_Example-dummy.m"; sourceTree = "<group>"; };
 		AD66903CBECBE8027B0DC6540E19AD54 /* Pods-TYModuleManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYModuleManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D31A396D94088561AA5C83C7865445B4 /* TYModuleManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TYModuleManager.framework; path = TYModuleManager/TYModuleManager.framework; sourceTree = "<group>"; };
+		B6DFED5BC37219112AC5166E4CE36C77 /* TYModuleTaskExecuteCompleteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTaskExecuteCompleteProtocol.h; path = TYModuleManager/Headers/TYModuleTaskExecuteCompleteProtocol.h; sourceTree = "<group>"; };
+		BAABD968168DC8C287DD927F4C608B8E /* TYTestProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTestProtocol.h; path = TYModuleServices/Classes/TYTestProtocol.h; sourceTree = "<group>"; };
+		BB64A9D9F0AB83395F248BDA532D4C3C /* TYModuleTaskConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTaskConstant.h; path = TYModuleManager/Headers/TYModuleTaskConstant.h; sourceTree = "<group>"; };
+		BD020AF2A570F058644A396B5B618B1F /* TYModuleLoginLifeCycleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleLoginLifeCycleProtocol.h; path = TYModuleManager/Headers/TYModuleLoginLifeCycleProtocol.h; sourceTree = "<group>"; };
+		BD21E7B90736AFCA28D023DECCFB047C /* TYModuleServiceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleServiceManager.h; path = TYModuleManager/Headers/TYModuleServiceManager.h; sourceTree = "<group>"; };
+		C38C1630F9D7371B8F9B23531F710F7F /* TYModuleTaskQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTaskQueue.h; path = TYModuleManager/Headers/TYModuleTaskQueue.h; sourceTree = "<group>"; };
+		C5617F1DF3F103B11A90DDA0A336B0D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C76A650B102DC59A599C7177EF2C9921 /* TYModuleTemplateBundleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTemplateBundleProtocol.h; path = TYModuleManager/Headers/TYModuleTemplateBundleProtocol.h; sourceTree = "<group>"; };
+		C8E358E0C3AEB9FB8248E390B01AA4BD /* TYModuleApplicationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleApplicationProtocol.h; path = TYModuleManager/Headers/TYModuleApplicationProtocol.h; sourceTree = "<group>"; };
+		CB0943E5DB962375279CF2A5A36D5AEE /* TYModuleLoginUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleLoginUtil.h; path = TYModuleManager/Headers/TYModuleLoginUtil.h; sourceTree = "<group>"; };
+		CB362641FE10F7574AC4F9434AD84B02 /* TYModuleManagerEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleManagerEnum.h; path = TYModuleManager/Headers/TYModuleManagerEnum.h; sourceTree = "<group>"; };
+		DC4EDFC716D667831013791A638A17EB /* TYModuleApplicationImplProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleApplicationImplProtocol.h; path = TYModuleManager/Headers/TYModuleApplicationImplProtocol.h; sourceTree = "<group>"; };
+		E1CE9F2EFC93794E47087318B2BB1D40 /* TYModuleASyncTaskNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleASyncTaskNode.h; path = TYModuleManager/Headers/TYModuleASyncTaskNode.h; sourceTree = "<group>"; };
+		E279CC3E0907CB7F46C9C822336CC7F4 /* TYSmartHouseIndexProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYSmartHouseIndexProtocol.h; path = TYModuleServices/Classes/TYSmartHouse/TYSmartHouseIndexProtocol.h; sourceTree = "<group>"; };
+		E5D516E8C95B406C8A12DA55AD860B87 /* TYModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleManager.h; path = TYModuleManager/Headers/TYModuleManager.h; sourceTree = "<group>"; };
+		EDADCEB750498834CE7FC6EBA406F6A9 /* TYModuleRouteManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleRouteManager.h; path = TYModuleManager/Headers/TYModuleRouteManager.h; sourceTree = "<group>"; };
+		EFA091DDC4313CFD51C9BA679B9A2DC4 /* TYSmartHouseNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYSmartHouseNotification.h; path = TYModuleServices/Classes/TYSmartHouse/TYSmartHouseNotification.h; sourceTree = "<group>"; };
+		F1870590A8253DA6777E049FB4C28839 /* TYActivatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYActivatorProtocol.h; path = TYModuleServices/Classes/TYActivatorProtocol.h; sourceTree = "<group>"; };
+		F3320F7C7DAF326AD5479CDBF7103734 /* TYModuleAppDelegateUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleAppDelegateUtil.h; path = TYModuleManager/Headers/TYModuleAppDelegateUtil.h; sourceTree = "<group>"; };
+		F51446572D3F29DF18121C2925119F29 /* TYMallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYMallProtocol.h; path = TYModuleServices/Classes/TYMallProtocol.h; sourceTree = "<group>"; };
+		F559FCA19452EB941D4707C05D83303E /* TYDeviceShareProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYDeviceShareProtocol.h; path = TYModuleServices/Classes/TYDeviceShareProtocol.h; sourceTree = "<group>"; };
+		F8054F492958B391756A39EBA82AA3C6 /* TYUserCenterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYUserCenterProtocol.h; path = TYModuleServices/Classes/TYUserCenterProtocol.h; sourceTree = "<group>"; };
+		FB00C528A3F99315781373EC5A2A0699 /* TYModuleTaskProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleTaskProtocol.h; path = TYModuleManager/Headers/TYModuleTaskProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,14 +100,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C458F725464077CF136BC2CC85EC0F2 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9EE7B6052A06E151C5E840A8D3F1314C /* TYModuleManager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		31FB4A910FD91E91179DD5787A4DCB1E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -56,14 +108,45 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5533110171A3BC3ECF7D147A7AD02AD8 /* Pod */ = {
+		3907C6C19ABC13A29BE4DD6F5031AD15 /* TYModuleServices */ = {
 			isa = PBXGroup;
 			children = (
-				6E79794A05D25EFE2FD505689B9DEDF7 /* LICENSE */,
-				15A7102C8431AF3A1A32D3EAADDC8AF3 /* README.md */,
-				3FDEAA05573C84DD0459625929023E9A /* TYModuleManager.podspec */,
+				F1870590A8253DA6777E049FB4C28839 /* TYActivatorProtocol.h */,
+				6FCFAA866DA460206C95C88E4C94C2B3 /* TYAppleReviewProtocol.h */,
+				2A1EA6D6C0CBC4498BAC00453744C1ED /* TYCameraProtocol.h */,
+				F559FCA19452EB941D4707C05D83303E /* TYDeviceShareProtocol.h */,
+				6D6D4F7B81F15E6499494DF17D388CB5 /* TYFamilyProtocol.h */,
+				A8B1EF5D35A580AA5445F33EA982CAC2 /* TYFeedBackProtocol.h */,
+				281288DA4CF3E7B35034AA70A225C671 /* TYLoginProtocol.h */,
+				F51446572D3F29DF18121C2925119F29 /* TYMallProtocol.h */,
+				8747D1478D1BCC9F9D8A1C9C00C78EF6 /* TYMessageCenterProtocol.h */,
+				32B8EDA7502EFC0D2FAED2BFEE99DCFE /* TYModuleServices.h */,
+				2FBA357629AFFA91314F0DF8A856C5CC /* TYPanelProtocol.h */,
+				E279CC3E0907CB7F46C9C822336CC7F4 /* TYSmartHouseIndexProtocol.h */,
+				EFA091DDC4313CFD51C9BA679B9A2DC4 /* TYSmartHouseNotification.h */,
+				22D673E8053B92FA70283242CA83D900 /* TYSmartSceneProtocol.h */,
+				BAABD968168DC8C287DD927F4C608B8E /* TYTestProtocol.h */,
+				A715F31E31570D943761945BDAA8775F /* TYUserCenterConfigProtocol.h */,
+				F8054F492958B391756A39EBA82AA3C6 /* TYUserCenterProtocol.h */,
 			);
-			name = Pod;
+			name = TYModuleServices;
+			path = TYModuleServices;
+			sourceTree = "<group>";
+		};
+		534B65552BD35DA8E72489317A94B814 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE912B655E2C71F034D6DE57C1B60155 /* TYModuleManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		57841FC5405803B763E5D992E52EC725 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50FBB7AEF16D578FD76AFFF76BA0982E /* libTYModuleManager.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		578B3211C63E467D22D6F0ABFC686FA8 /* Products */ = {
@@ -78,29 +161,22 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				2C458F725464077CF136BC2CC85EC0F2 /* Development Pods */,
+				534B65552BD35DA8E72489317A94B814 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				ED2634C1AA5EC367EF222E2B9C66E523 /* Pods */,
 				578B3211C63E467D22D6F0ABFC686FA8 /* Products */,
 				31FB4A910FD91E91179DD5787A4DCB1E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		990F1355745648453F10AC931F8FCD08 /* Frameworks */ = {
+		B4AEC95178D2927F41F7638AA4F38770 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D31A396D94088561AA5C83C7865445B4 /* TYModuleManager.framework */,
+				158EAB354ABB15BF1D501E10CF108025 /* LICENSE */,
+				C5617F1DF3F103B11A90DDA0A336B0D8 /* README.md */,
+				04B6FA335A134086BBCC6BA18978FB55 /* TYModuleManager.podspec */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9EE7B6052A06E151C5E840A8D3F1314C /* TYModuleManager */ = {
-			isa = PBXGroup;
-			children = (
-				990F1355745648453F10AC931F8FCD08 /* Frameworks */,
-				5533110171A3BC3ECF7D147A7AD02AD8 /* Pod */,
-			);
-			name = TYModuleManager;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -109,6 +185,59 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE912B655E2C71F034D6DE57C1B60155 /* TYModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				5581F0B0C195980B51FD7F652863B398 /* TYLifeCycleManager.h */,
+				58055DAED45C011F4487D2B926469BA7 /* TYMainViewControllerImpl.h */,
+				049C214EB3F14182158F44F8DF1DDDD4 /* TYMainViewControllerProtocol.h */,
+				72711CC100AB8243A3423E2125AB4BC8 /* TYModuleAppDelegateProtocol.h */,
+				F3320F7C7DAF326AD5479CDBF7103734 /* TYModuleAppDelegateUtil.h */,
+				8B268B123A6F59279548513B081E5F34 /* TYModuleApplication.h */,
+				DC4EDFC716D667831013791A638A17EB /* TYModuleApplicationImplProtocol.h */,
+				3E6762F5412E64398B73D06F0008B5FE /* TYModuleApplicationManager.h */,
+				C8E358E0C3AEB9FB8248E390B01AA4BD /* TYModuleApplicationProtocol.h */,
+				84AA563B94A2C4981FFB1A5551488835 /* TYModuleAsyncTaskAnalyse.h */,
+				E1CE9F2EFC93794E47087318B2BB1D40 /* TYModuleASyncTaskNode.h */,
+				3778889FD47D6C02C18CE6177766B08C /* TYModuleCommonConstant.h */,
+				AB49921539745360F1FDDBA0DC7D028E /* TYModuleConfigManager.h */,
+				75B886C7CE943C3714CABC89BDDA44EB /* TYModuleLifeCycleProtocol.h */,
+				BD020AF2A570F058644A396B5B618B1F /* TYModuleLoginLifeCycleProtocol.h */,
+				CB0943E5DB962375279CF2A5A36D5AEE /* TYModuleLoginUtil.h */,
+				45DDDAA9BE8BA63D7B825F9EBE218011 /* TYModuleMainLoginProtocol.h */,
+				E5D516E8C95B406C8A12DA55AD860B87 /* TYModuleManager.h */,
+				280EE537E97739B66C20F712A1DAF5E6 /* TYModuleManagerContext.h */,
+				CB362641FE10F7574AC4F9434AD84B02 /* TYModuleManagerEnum.h */,
+				6B9BC0656C4AF1626564933C43E976DC /* TYModuleManagerProtocol.h */,
+				143E9A78E9873647DCE5E4AC917AFB7A /* TYModuleProtocol.h */,
+				EDADCEB750498834CE7FC6EBA406F6A9 /* TYModuleRouteManager.h */,
+				2D26B155FEA163482E068FFDCFAADB41 /* TYModuleRouterProtocol.h */,
+				2402E5E78F6AA335AACD495E49E0FD78 /* TYModuleService.h */,
+				BD21E7B90736AFCA28D023DECCFB047C /* TYModuleServiceManager.h */,
+				62002D89B5C7230DB9A4AD166A0AEA37 /* TYModuleServiceProtocol.h */,
+				6CBC5492F481CDBFAE730CFA0CA42EB1 /* TYModuleTabbarMapping.h */,
+				1A7F3E674C87A5D0834D7D5CB2839221 /* TYModuleTabbarUtil.h */,
+				5D4281AD573A11119AE8E54838AA6151 /* TYModuleTabbarUtilProtocol.h */,
+				579069C7A6EA0CE86B8B060257B45595 /* TYModuleTabManager.h */,
+				86EBD20E6B56108E0BEDE600249D0922 /* TYModuleTabProtocol.h */,
+				BB64A9D9F0AB83395F248BDA532D4C3C /* TYModuleTaskConstant.h */,
+				B6DFED5BC37219112AC5166E4CE36C77 /* TYModuleTaskExecuteCompleteProtocol.h */,
+				1AF9C4F7665F0EFBC560C2DFEF4CFEF7 /* TYModuleTaskManager.h */,
+				FB00C528A3F99315781373EC5A2A0699 /* TYModuleTaskProtocol.h */,
+				C38C1630F9D7371B8F9B23531F710F7F /* TYModuleTaskQueue.h */,
+				C76A650B102DC59A599C7177EF2C9921 /* TYModuleTemplateBundleProtocol.h */,
+				A990B38C1369DC0DBDCD621727C1F00A /* TYModuleUtils.h */,
+				1635419AB4CED4018EA00823CB18EC5E /* TYModulPublic.h */,
+				8EFBD6252F2DF390E03D0C85B000C2B3 /* TYRoute.h */,
+				23E32D46ADAF26355CB6D3ECDBF28B95 /* TYTabBarViewControllerProtocol.h */,
+				87A0F99AB40A0F6FA80B43A6B502C97E /* TYTaskProtocol.h */,
+				57841FC5405803B763E5D992E52EC725 /* Frameworks */,
+				B4AEC95178D2927F41F7638AA4F38770 /* Pod */,
+			);
+			name = TYModuleManager;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -132,6 +261,14 @@
 			);
 			name = "Pods-TYModuleManager_Example";
 			path = "Target Support Files/Pods-TYModuleManager_Example";
+			sourceTree = "<group>";
+		};
+		ED2634C1AA5EC367EF222E2B9C66E523 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3907C6C19ABC13A29BE4DD6F5031AD15 /* TYModuleServices */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
