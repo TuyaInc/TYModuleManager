@@ -1,0 +1,14 @@
+{
+    "schema": "yourSchema",
+    "appDelegate": "TYTestApplication",
+    "tabManager": "TYModuleTabManager",
+    "tabs": [
+        "TYTestModule1",
+        "TYTestModule2"
+    ],
+    "tabSelect": "TYTestModule2",
+    "modules": [
+        "TYTestModule1",
+        "TYTestModule2"
+    ]
+}

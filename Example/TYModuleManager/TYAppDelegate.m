@@ -2,8 +2,8 @@
 //  TYAppDelegate.m
 //  TYModuleManager
 //
-//  Created by isfang on 06/14/2018.
-//  Copyright (c) 2018 isfang. All rights reserved.
+//  Created by Tuya on 06/14/2018.
+//  Copyright (c) 2018 Tuya. All rights reserved.
 //
 
 #import "TYAppDelegate.h"
@@ -13,40 +13,19 @@
 @implementation TYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 调用TYModuleManager，启动模块化加载
+    // TYModuleManager将在模块化加载完成以后，调用 TYTestApplication
+    // 你可以在 TYTestApplication 完成你的其它任务
     
-    [[TYModuleManager sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    return YES;
+    return [[TYModuleManager sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    
+- (BOOL)respondsToSelector:(SEL)aSelector {
+    return [super respondsToSelector:aSelector] || [[TYModule applicationService] respondsToSelector:aSelector];
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    
-    return YES;
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    return [[TYModule applicationService] respondsToSelector:aSelector] ? [TYModule applicationService] : nil;
 }
-
-#pragma mark Remote Notification
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    
-}
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
-    
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    
-}
-
-#pragma mark - Local Notification
-
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    
-}
-
 
 @end
