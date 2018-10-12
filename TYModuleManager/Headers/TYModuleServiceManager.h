@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TYModuleProtocol.h"
+#import "TYModuleServiceBlueprint.h"
 
 @interface TYModuleServiceImplMapping : NSObject
 
@@ -17,11 +17,7 @@
 
 @end
 
-@interface TYModuleServiceManager : NSObject
-+ (id)moduleServiceForProtocol:(Protocol *)protocol;
-+ (void)moduleServiceResetRoot:(UIViewController *)viewController;
-+ (UIViewController *)moduleServiceMainViewController;
-- (void)serviceRegisterWithModule:(id<TYModuleProtocol>)module;
-- (id)implForProtocol:(Protocol *)protocol;
+@interface TYModuleServiceManager : NSObject <TYModuleServiceBlueprint>
+
 @end
 

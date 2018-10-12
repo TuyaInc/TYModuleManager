@@ -1,1 +1,0 @@
-../../../TYModuleServices/TYModuleServices/Classes/TYSmartHouse/TYSmartHouseIndexProtocol.h

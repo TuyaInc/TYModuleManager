@@ -8,11 +8,13 @@
 
 #import "TYAppDelegate.h"
 
-
+#import "TYModuleManager.h"
 
 @implementation TYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[TYModuleManager sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     return YES;
 }

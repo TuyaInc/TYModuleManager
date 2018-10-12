@@ -7,13 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TYModuleProtocol.h"
+#import "TYModuleTaskBlueprint.h"
 
-@interface TYModuleTaskManager : NSObject
+@interface TYModuleTaskManager : NSObject <TYModuleTaskBlueprint>
     
-@property (nonatomic, copy) void (^basicTaskCompleteBlock)(void);
-
-- (void)registerTasks:(id<TYModuleProtocol>)module;
-
-- (void)generateTaskQueue;
 @end

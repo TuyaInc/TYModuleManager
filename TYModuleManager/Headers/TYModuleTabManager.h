@@ -7,12 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TYModuleProtocol.h"
-#import "TYModuleTabbarMapping.h"
+#import "TYModuleTabBarBlueprint.h"
 
-@interface TYModuleTabManager : NSObject
-- (void)tabbarRegisterWithModule:(id<TYModuleProtocol>)module;
-- (TYModuleTabbarMapping *)tabbarMappingForModuleName:(NSString *)module;
-- (NSInteger)tabbarIndexForModuleName:(NSString *)module;
-- (void)updateRegisteredTabs;
+@interface TYModuleTabManager : NSObject <TYModuleTabBarBlueprint>
+
 @end

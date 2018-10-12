@@ -1,1 +1,0 @@
-../../../TYModuleServices/TYModuleServices/Classes/TYSmartSceneProtocol.h

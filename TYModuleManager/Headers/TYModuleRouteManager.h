@@ -7,16 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TYModuleProtocol.h"
+#import "TYModuleRouteBlueprint.h"
 
-@interface TYModuleRouteManager : NSObject
+@interface TYModuleRouteManager : NSObject <TYModuleRouteBlueprint>
 
-- (void)urlRegisterWithModule:(id<TYModuleProtocol>)module;
-
-- (NSString *)moduleForSchema:(NSString *)schema host:(NSString *)host;
-
-+ (NSDictionary *)dictionaryFromQuery:(NSString *)query;
-
-+ (BOOL)openURL:(NSString *)targetURL parameters:(NSDictionary *)parameters;
 @end
 
