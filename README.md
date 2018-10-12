@@ -30,3 +30,9 @@ ReplaceYourModuleName 替换成你希望的模块名
 
 
 2. 在网络正常的情况下, 会自动打开工程, 默认依赖了TYModuleManagerExample工程,里面有更加详细的说明
+
+
+
+注意：
+
+1.0.1版本的TYModuleManager对部分接口进行了修改，如果你的代码中使用过低版本，请一并引入兼容库[TYModuleManagerCompatKit](https://github.com/TuyaInc/TYModuleManagerCompatKit)
