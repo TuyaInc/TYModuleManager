@@ -43,7 +43,7 @@
 
 
 /**
- 
+ 混合模式，支持 module 和 service
  */
 @property (nonatomic, strong, readonly, nullable) NSDictionary<NSString *, Class> *mixMapping;
 

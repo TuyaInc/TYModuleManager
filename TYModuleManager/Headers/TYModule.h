@@ -15,6 +15,12 @@
 #import "TYModuleNotifyBlueprint.h"
 #import "TYModuleTaskBlueprint.h"
 
+#import "TYModuleServiceRegisterProtocol.h"
+#import "TYModuleRouteRegisterProtocol.h"
+#import "TYModuleTabRegisterProtocol.h"
+#import "TYModuleNotifyRegisterProtocol.h"
+#import "TYModuleTaskRegisterProtocol.h"
+
 
 /**
  TYModule类主要用于提供一些快捷的方法，便于书写
