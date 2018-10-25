@@ -1,11 +1,16 @@
 //
 //  TYTabCustomButtonProtocol.h
-//  TYModuleTabbar
+//  TYModuleManager
 //
 //  Created by 朱盼 on 2018/9/12.
 //
 
 #import <Foundation/Foundation.h>
+
+/*
+ 涂鸦已经包含了 UIControl对以下属性的存取方法
+ 所以请放心使用
+ */
 
 @protocol TYTabCustomButtonProtocol <NSObject>
 

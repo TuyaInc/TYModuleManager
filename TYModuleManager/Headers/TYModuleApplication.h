@@ -1,6 +1,6 @@
 //
 //  TYModuleApplication.h
-//  BlocksKit
+//  TYModuleManager
 //
 //  Created by 房栋 on 2018/7/13.
 //

@@ -1,6 +1,6 @@
 //
 //  TYModuleNotifyBlueprint.h
-//  Pods
+//  TYModuleManager
 //
 //  Created by 朱盼 on 2018/9/3.
 //
