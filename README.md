@@ -1,32 +1,46 @@
-脚手架使用说明:
-
-PS :后续有示例更新,用户直接pod update 即可
+# TYModuleManager
 
 
 
-使用约定:
+## 概述
 
-1.macOS Version 10.13-10.14 beta 及以上
+TYModuleManager 是涂鸦所使用的模块化工具，它也能提供诸如 route管理、tab管理、notify管理、launchTask管理、service管理 等功能
 
-2.cocoapods Version 1.5.3 及以上
+TYModuleManager 能够帮助开发者的代码更好的接入 "涂鸦智能"APP
 
-3.xcode Version 9.4.1 及以上
-
-4.可以正常访问github
-
-5.在TYModuleManagerExampleImpl.m中有客户可使用的三方组件及版本, 可以按需使用 不在列表中的组件,需要申请通过才可以使用
+更多关于TYModuleManager的介绍  🔗[TYModuleManager客户使用指南](https://tuyainc.github.io/2018/10/12/TYModuleManager%E5%AE%A2%E6%88%B7%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/)
 
 
 
-使用方法:
+## 使用
 
-ReplaceYourModuleName 替换成你希望的模块名
+```ruby
+source 'https://github.com/TuyaInc/TYPublicSpecs.git'
 
-`pod lib create ReplaceYourModuleName --template-url=<https://github.com/TuyaInc/pod-template.git>`
-
-使用细节:
-
-1. 执行命令后会创建一个默认工程, 工程前缀不允许使用TY , 可使用不包括TY的任何其他前缀 防止跟我们内部的一些名字冲突
+pod 'TYModuleManager'
+```
 
 
-2. 在网络正常的情况下, 会自动打开工程, 默认依赖了TYModuleManagerExample工程,里面有更加详细的说明
+
+## 配套工具
+
+- tuya-cli-public
+
+  涂鸦提供的脚手架工具，能够帮助开发者通过简单的命令搭建符合涂鸦规范的功能，并进行相关管理
+
+  - tuya-cli-public  [下载](https://rubygems.org/gems/tycli-public)
+  - tuya-cli-public  [使用指南](https://tuyainc.github.io/2018/09/25/tuya-cli-public/)
+
+
+
+- TYModuleManaberCompatKit
+
+  如果你曾使用过 TYModuleManager < 1.0 的版本，且在升级后无法通过编译，请使用[TYModuleManagerCompatKit](https://github.com/TuyaInc/TYModuleManagerCompatKit)对你的老代码进行兼容
+
+  ```ruby
+  source 'https://github.com/TuyaInc/TYPublicSpecs.git'
+  
+  pod 'TYModuleManagerCompatKit'
+  ```
+
+  
