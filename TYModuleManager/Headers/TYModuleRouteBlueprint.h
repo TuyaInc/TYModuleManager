@@ -1,6 +1,6 @@
 //
 //  TYModuleRouteBlueprint.h
-//  BlocksKit
+//  TYModuleManager
 //
 //  Created by 朱盼 on 2018/8/21.
 //
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TYModuleRouteBlueprint <TYModuleBaseBlueprint>
 
-@property (nonatomic, copy) NSString *appSchema;
+@property (nonatomic, copy) NSString *appScheme;
 
 - (void)registRoute:(NSString *)route forModule:(id)module;
 - (void)unregistRouteOfSchema:(NSString *)schema host:(nullable NSString *)host;

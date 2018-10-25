@@ -1,6 +1,6 @@
 //
 //  UIControl+TYTabCustomButton.h
-//  TYModuleTabbar
+//  TYModuleManager
 //
 //  Created by 朱盼 on 2018/9/12.
 //

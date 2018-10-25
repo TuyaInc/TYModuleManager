@@ -16,7 +16,7 @@
 
 @property (nonatomic, strong, readonly, nonnull) NSDictionary *originalData;
 
-@property (nonatomic, copy, readonly, nonnull) NSString *schema;
+@property (nonatomic, copy, readonly, nonnull) NSString *scheme;
 
 /**
  所有需要被加载的模块

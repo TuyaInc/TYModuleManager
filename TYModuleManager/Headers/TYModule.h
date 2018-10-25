@@ -13,13 +13,14 @@
 #import "TYModuleApplicationBlueprint.h"
 #import "TYModuleTabBarBlueprint.h"
 #import "TYModuleNotifyBlueprint.h"
-#import "TYModuleTaskBlueprint.h"
+#import "TYModuleLaunchTaskBlueprint.h"
+
 
 #import "TYModuleServiceRegisterProtocol.h"
 #import "TYModuleRouteRegisterProtocol.h"
 #import "TYModuleTabRegisterProtocol.h"
 #import "TYModuleNotifyRegisterProtocol.h"
-#import "TYModuleTaskRegisterProtocol.h"
+#import "TYModuleLaunchTaskRegisterProtocol.h"
 
 
 /**
@@ -30,7 +31,7 @@
 
 #pragma mark - Service
 + (nullable id)serviceOfProtocol:(nonnull Protocol *)protocol;
-+ (void)registService:(Class)implCls withProtocol:(nonnull Protocol *)protocol;
++ (void)registService:(nonnull Class)implCls withProtocol:(nonnull Protocol *)protocol;
 
 #pragma mark - Module
 + (nullable id)moduleImplOfClass:(nonnull Class)cls;
@@ -42,6 +43,6 @@
 + (nullable id<TYModuleApplicationBlueprint>)applicationService;
 + (nullable id<TYModuleTabBarBlueprint>)tabService;
 + (nullable id<TYModuleNotifyBlueprint>)notifyService;
-+ (nullable id<TYModuleTaskBlueprint>)taskService;
++ (nullable id<TYModuleLaunchTaskBlueprint>)taskService;
 
 @end

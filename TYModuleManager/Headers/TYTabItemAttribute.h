@@ -1,6 +1,6 @@
 //
 //  TYTabItemAttribute.h
-//  TYModuleTabbar
+//  TYModuleManager
 //
 //  Created by 朱盼 on 2018/8/23.
 //
