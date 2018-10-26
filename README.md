@@ -26,7 +26,7 @@ pod 'TYModuleManager'
 
 - tuya-cli-public
 
-  涂鸦提供的脚手架工具，能够帮助开发者通过简单的命令搭建符合涂鸦规范的功能，并进行相关管理
+  涂鸦提供的脚手架工具，能够帮助开发者通过简单的命令搭建符合涂鸦规范的工程，并帮助进行相关管理
 
   - tuya-cli-public  [下载](https://rubygems.org/gems/tycli-public)
   - tuya-cli-public  [使用指南](https://tuyainc.github.io/2018/09/25/tuya-cli-public/)
