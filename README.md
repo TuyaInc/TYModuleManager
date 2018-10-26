@@ -33,7 +33,7 @@ pod 'TYModuleManager'
 
 
 
-- TYModuleManaberCompatKit
+- TYModuleManagerCompatKit
 
   如果你曾使用过 TYModuleManager < 1.0 的版本，且在升级后无法通过编译，请使用[TYModuleManagerCompatKit](https://github.com/TuyaInc/TYModuleManagerCompatKit)对你的老代码进行兼容
 
