@@ -21,8 +21,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reloadRootViewController;
 
+@optional
+// 以下方法TYModuleApplication类已经实现，可以根据需要覆写
+
+// window的创建
+- (UIWindow *)window;
+
+// 重置keyWindow的root
 - (void)resetRootViewController:(__kindof UIViewController *)rootVC;
 
+// keyWindow当前的root
 - (__kindof UIViewController *)currentRootViewController;
 
 @end
