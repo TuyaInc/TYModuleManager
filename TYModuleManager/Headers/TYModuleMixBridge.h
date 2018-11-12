@@ -12,6 +12,10 @@
 
 @interface TYModuleMixBridge : NSObject
 
+/**
+ 如果obj是class，则返回class
+ 如果obj是instance，则返回instance
+ */
 + (id)bridgeTargetOfObj:(id)obj;
 
 @end
