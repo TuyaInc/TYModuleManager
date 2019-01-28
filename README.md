@@ -22,6 +22,12 @@ pod 'TYModuleManager'
 
 
 
+## 禁用异常警告
+
+在 info.plist 中添加 "TYModuleManager_Disable_Exception" 并设置为 YES 
+
+
+
 ## 配套工具
 
 - tuya-cli-public
