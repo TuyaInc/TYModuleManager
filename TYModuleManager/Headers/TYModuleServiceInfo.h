@@ -2,7 +2,7 @@
 //  TYModuleServiceInfo.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/8/21.
+//  Created by TuyaInc on 2018/8/21.
 //
 
 #import <Foundation/Foundation.h>

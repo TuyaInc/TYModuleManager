@@ -2,7 +2,7 @@
 //  TYModuleManager.h
 //  TYModuleManager
 //
-//  Created by 房栋 on 2018/3/20.
+//  Created by TuyaInc on 2018/3/20.
 //
 
 #import <Foundation/Foundation.h>

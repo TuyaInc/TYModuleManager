@@ -2,7 +2,7 @@
 //  TYModuleTabRegisterProtocol.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/8/30.
+//  Created by TuyaInc on 2018/8/30.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  tab将要被添加到tabBar上
  */
-- (void)tabBarWillAdd:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (void)tabBarWillAdd:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
 /**
  item是否允许被选中
@@ -34,27 +34,27 @@ NS_ASSUME_NONNULL_BEGIN
  请 务必仅返回 YES/NO
  默认根据TYTabItemAttribute.viewController判断
  */
-- (BOOL)tabBarCanSelect:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (BOOL)tabBarCanSelect:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
 /**
  用户点击tab后，是否允许展示对应vc
  */
-- (BOOL)tabBarShouldShow:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (BOOL)tabBarShouldShow:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
 /**
  tab选中
  */
-- (void)tabBarDidSelect:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (void)tabBarDidSelect:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
 /**
  tab取消选中
  */
-- (void)tabBarDidUnselect:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (void)tabBarDidUnselect:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
 /**
  tab是否允许设置badge
  */
-- (BOOL)tabBarShouldSetBadge:(nullable NSString *)badge forIndex:(NSUInteger)index withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (BOOL)tabBarShouldSetBadge:(nullable NSString *)badge withItemAttribute:(TYTabItemAttribute *)attribute;;
 
 @end
 

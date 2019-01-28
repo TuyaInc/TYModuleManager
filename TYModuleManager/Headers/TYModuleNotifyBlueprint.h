@@ -2,7 +2,7 @@
 //  TYModuleNotifyBlueprint.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/9/3.
+//  Created by TuyaInc on 2018/9/3.
 //
 
 #import <Foundation/Foundation.h>

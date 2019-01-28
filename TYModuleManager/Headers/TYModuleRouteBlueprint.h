@@ -2,7 +2,7 @@
 //  TYModuleRouteBlueprint.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/8/21.
+//  Created by TuyaInc on 2018/8/21.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,15 +15,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TYModuleRouteBlueprint <TYModuleBaseBlueprint>
 
-@property (nonatomic, copy) NSString *appScheme;
-
+/**
+ scheme、path、query will be ignore
+ */
 - (void)registRoute:(NSString *)route forModule:(id)module;
-- (void)unregistRouteOfSchema:(NSString *)schema host:(nullable NSString *)host;
+- (void)unregistRoute:(NSString *)route;
 
-- (nullable NSArray<NSString *> *)routeInfoOfModule:(id)module;
 - (nullable id)moduleOfRoute:(NSString *)route;
 
-- (BOOL)openRoute:(NSString *)url withParams:(nullable NSDictionary *)params;
+/**
+ scheme、path、query will pass to the handle impl
+ */
+- (BOOL)openRoute:(NSString *)route withParams:(nullable NSDictionary *)params;
 
 @end
 

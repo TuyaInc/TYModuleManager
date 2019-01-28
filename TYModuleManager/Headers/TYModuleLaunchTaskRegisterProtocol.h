@@ -2,7 +2,7 @@
 //  TYModuleLaunchTaskRegisterProtocol.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/9/18.
+//  Created by TuyaInc on 2018/9/18.
 //
 
 #import <Foundation/Foundation.h>

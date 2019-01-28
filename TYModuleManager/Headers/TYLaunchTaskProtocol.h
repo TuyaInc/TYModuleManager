@@ -2,7 +2,7 @@
 //  TYLaunchTaskProtocol.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/10/23.
+//  Created by TuyaInc on 2018/10/23.
 //
 
 #import <Foundation/Foundation.h>

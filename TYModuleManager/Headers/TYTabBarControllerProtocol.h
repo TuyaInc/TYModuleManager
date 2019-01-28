@@ -2,12 +2,12 @@
 //  TYTabBarControllerProtocol.h
 //  TYModuleTabbar
 //
-//  Created by 朱盼 on 2018/8/27.
+//  Created by TuyaInc on 2018/8/27.
 //
 
 #import <Foundation/Foundation.h>
 
-@class TYTabBarItemConfig;
+@class TYTabItemAttribute;
 
 @protocol TYTabBarControllerDataSource;
 @protocol TYTabBarControllerDelegate;
@@ -30,13 +30,12 @@
 @property (nonatomic) UIEdgeInsets itemImageInsets;
 @property (nonatomic) UIOffset itemTitleOffset;
 
-@property (nonatomic, strong, readonly) NSArray<TYTabBarItemConfig *> *itemConfigArr;
+@property (nonatomic, strong, readonly) NSArray<TYTabItemAttribute *> *itemAttributes;
 
 - (void)reloadData;
 
-- (TYTabBarItemConfig *)itemConfigAtIndex:(NSUInteger)index;
-- (TYTabBarItemConfig *)itemConfigOfViewController:(UIViewController *)childController;
-
+- (TYTabItemAttribute *)itemAttributeAtIndex:(NSUInteger)index;
+- (TYTabItemAttribute *)itemAttributeOfViewController:(UIViewController *)childController;
 - (UIViewController *)childViewControllerAtIndex:(NSUInteger)index;
 
 - (UIControl *)customTabButtonAtIndex:(NSUInteger)index;

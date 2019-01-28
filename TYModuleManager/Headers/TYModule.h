@@ -2,7 +2,7 @@
 //  TYModule.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/8/28.
+//  Created by TuyaInc on 2018/8/28.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,6 +22,8 @@
 #import "TYModuleNotifyRegisterProtocol.h"
 #import "TYModuleLaunchTaskRegisterProtocol.h"
 
+
+#define TY_ServiceImpl(prot) ((id<prot>)[TYModule serviceOfProtocol:@protocol(prot)])
 
 /**
  TYModule类主要用于提供一些快捷的方法，便于书写
