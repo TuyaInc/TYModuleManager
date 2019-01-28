@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TYModuleManager'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'module manager from Tuya'
   s.homepage         = 'https://www.tuya.com'
   s.author           = { 'tuyaInc' => 'https://www.tuya.com' }
