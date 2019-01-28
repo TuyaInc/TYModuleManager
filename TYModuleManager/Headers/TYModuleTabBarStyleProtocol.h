@@ -2,7 +2,7 @@
 //  TYModuleTabBarStyleProtocol.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/9/4.
+//  Created by TuyaInc on 2018/9/4.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,7 +23,7 @@
 /**
  @return 事件是否继续向原生代码实现传递
  */
-- (BOOL)tabBarWillAdd:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (BOOL)tabBarWillAdd:(nullable UIViewController *)controller withItemAttribute:(nonnull TYTabItemAttribute *)attribute;
 
 /**
  item是否允许被选中
@@ -33,24 +33,26 @@
  请 务必仅返回 YES/NO
  style中此方法优先级高于native
  */
-- (BOOL)tabBarCanSelect:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute nativeResult:(BOOL)nativeResult;
+- (BOOL)tabBarCanSelect:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute nativeResult:(BOOL)nativeResult;
 
 /**
  用户点击tab后，是否允许展示对应vc
  */
-- (BOOL)tabBarShouldShow:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute nativeResult:(BOOL)nativeResult;
+- (BOOL)tabBarShouldShow:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute nativeResult:(BOOL)nativeResult;
 
 /**
  @return 事件是否继续向原生代码实现传递
  */
-- (BOOL)tabBarDidSelect:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (BOOL)tabBarDidSelect:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
 /**
  @return 事件是否继续向原生代码实现传递
  */
-- (BOOL)tabBarDidUnselect:(nullable UIViewController *)controller withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute;
+- (BOOL)tabBarDidUnselect:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
-
-- (BOOL)tabBarShouldSetBadge:(nullable NSString *)badge forIndex:(NSUInteger)index withTabBarItem:(UITabBarItem *)tabItem customButton:(nullable UIControl *)button attribute:(TYTabItemAttribute *)attribute nativeResult:(BOOL)nativeResult;
+/**
+ 是否允许设置badge
+ */
+- (BOOL)tabBarShouldSetBadge:(nullable NSString *)badge withItemAttribute:(TYTabItemAttribute *)attribute nativeResult:(BOOL)nativeResult;
 
 @end

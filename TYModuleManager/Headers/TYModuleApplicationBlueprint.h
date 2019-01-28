@@ -2,7 +2,7 @@
 //  TYModuleApplicationProtocol.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/8/21.
+//  Created by TuyaInc on 2018/8/21.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,22 +16,35 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol TYModuleApplicationBlueprint <TYModuleBaseBlueprint, UIApplicationDelegate>
 
 @required
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions config:(id<TYModuleConfigBlueprint>)config;
-
-- (void)reloadRootViewController;
-
-@optional
-// 以下方法TYModuleApplication类已经实现，可以根据需要覆写
-
-// window的创建
+/**
+ you need to create a window and set to [UIApplication sharedApplication].delegate.window
+ when [UIApplication sharedApplication].delegate.window == nil
+ */
 - (UIWindow *)window;
 
-// 重置keyWindow的root
+/**
+ reload the root view controller of key window
+ */
+- (void)reloadRootViewController;
+
+/**
+ reset the root view controller of key window to a specified view controller
+ */
 - (void)resetRootViewController:(__kindof UIViewController *)rootVC;
 
-// keyWindow当前的root
+/**
+ the root view controller of key window
+ */
 - (__kindof UIViewController *)currentRootViewController;
+
+@optional
+
+/**
+ allow TYModuleManager to open route
+ */
+- (BOOL)shouldOpenRouteWithScheme:(NSString *)scheme host:(NSString *)host path:(NSString *)path params:(NSDictionary *)params;
 
 @end
 

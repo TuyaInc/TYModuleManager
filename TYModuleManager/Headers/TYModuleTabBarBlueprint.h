@@ -2,7 +2,7 @@
 //  TYModuleTabBarBlueprint.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/9/3.
+//  Created by TuyaInc on 2018/9/3.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,13 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (__kindof UITabBar *)tabBar;
 
 - (NSUInteger)indexOfModule:(Class)moduleCls;
+- (UIViewController *)viewControllerOfModule:(Class)moduleCls;
 
 - (void)reloadTabs;
 - (void)reloadTabsWithSelectModule:(nullable Class)moduleCls;
 
 - (void)showTabWithModule:(Class)moduleCls;
 
-// 使用customButton的item不支持角标
 - (void)setBadgeForIndex:(NSUInteger)index badge:(nullable NSString *)badge;
 - (void)setBadgeForModule:(Class)moduleCls badge:(nullable NSString *)badge;
 - (void)cleanAllBadge;

@@ -2,58 +2,65 @@
 //  TYModuleConfigProtocol.h
 //  TYModuleManager
 //
-//  Created by 朱盼 on 2018/8/21.
+//  Created by TuyaInc on 2018/8/21.
 //
 
 #import <Foundation/Foundation.h>
 
 #import "TYModuleApplicationBlueprint.h"
-#import "TYModuleTabBarBlueprint.h"
 #import "TYModuleServiceRegisterProtocol.h"
 #import "TYModuleTabRegisterProtocol.h"
+
+#import "TYTabBarControllerProtocol.h"
 
 @protocol TYModuleConfigBlueprint <TYModuleBaseBlueprint>
 
 @property (nonatomic, strong, readonly, nonnull) NSDictionary *originalData;
 
-@property (nonatomic, copy, readonly, nonnull) NSString *scheme;
+@property (nonatomic, strong, readonly, nullable) Class<TYModuleApplicationBlueprint> applicationModule;
 
 /**
+ all modules that need to be loaded
+ 
  所有需要被加载的模块
  */
 @property (nonatomic, strong, readonly, nullable) NSArray<Class<TYModuleServiceRegisterProtocol>> *buildModules;
 
 /**
- app的入口
- */
-@property (nonatomic, strong, readonly, nullable) Class<TYModuleApplicationBlueprint> applicationService;
-
-/**
- tabManager
- */
-@property (nonatomic, strong, readonly, nullable) Class<TYModuleTabBarBlueprint> tabManagerService;
-/**
- 需要显示在TabBar上的模块
+ modules that need to display on the tab bar
+ 
+ 想要展示在tab上的模块
  */
 @property (nonatomic, strong, readonly, nullable) NSArray<Class<TYModuleTabRegisterProtocol>> *moduleOnTabBar;
+
 /**
- tabBar上的默认选中的模块
+ default select module on tab bar
+ 
+ tabBar上默认选中的模块
  */
 @property (nonatomic, strong, readonly, nullable) Class<TYModuleTabRegisterProtocol> tabSelectedModule;
 
 
 /**
- 混合模式，支持 module 和 service
+ map of Mix Mode
  */
 @property (nonatomic, strong, readonly, nullable) NSDictionary<NSString *, Class> *mixMapping;
 
 
 /**
- 根据根据所给字符串返回正确的类
+ the class that find out by the module name
+ eg. input: @"TestModule"  return: TestModuleImpl or TestModule class
+ 
+ 根据根据所给模块名返回正确的类
  */
-- (nullable Class)validClassOfConfigClass:(nonnull NSString *)className;
+- (nullable Class)validClassOfConfigClass:(nonnull NSString *)moduleName;
+
 /**
- 根据所给key，在originalData中查找并返回正确的class
+ the class which match the key path in the original data
+ key path like that is supported :
+ a_path    a_path.sub_path     a_path.[2].sub_path
+ 
+ 根据所给keyPath，在originalData中查找并返回正确的class
  支持点语法 xxx.xxx  支持数组 xxx.[2].xxx
  */
 - (nullable Class)validClassOfConfigKeyPath:(nonnull NSString *)keyPath;
