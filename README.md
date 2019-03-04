@@ -8,7 +8,7 @@ TYModuleManager 是涂鸦所使用的模块化工具，它也能提供诸如 rou
 
 TYModuleManager 能够帮助开发者的代码更好的接入 "涂鸦智能"APP
 
-更多关于TYModuleManager的介绍  🔗[TYModuleManager客户使用指南](https://tuyainc.github.io/2018/10/12/TYModuleManager%E5%AE%A2%E6%88%B7%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/)
+更多关于TYModuleManager的介绍  🔗[iOS 模块化TYModuleManager使用说明](https://tuyainc.github.io/2018/09/25/iOS%20%E6%A8%A1%E5%9D%97%E5%8C%96TYModuleManager%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/)
 
 
 
