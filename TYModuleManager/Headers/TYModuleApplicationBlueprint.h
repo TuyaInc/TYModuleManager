@@ -19,12 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions;
 
 /**
- you need to create a window and set to [UIApplication sharedApplication].delegate.window
- when [UIApplication sharedApplication].delegate.window == nil
- */
-- (UIWindow *)window;
-
-/**
  reload the root view controller of key window
  */
 - (void)reloadRootViewController;
@@ -40,6 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (__kindof UIViewController *)currentRootViewController;
 
 @optional
+/**
+ you need to create a window and set to [UIApplication sharedApplication].delegate.window
+ when [UIApplication sharedApplication].delegate.window == nil
+ */
+- (UIWindow *)window;
 
 /**
  allow TYModuleManager to open route

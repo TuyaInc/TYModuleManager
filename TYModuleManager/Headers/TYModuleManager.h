@@ -19,4 +19,10 @@
 
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions;
 
+/*
+ if you need to use TYModuleManager in extension or widget
+ call this method once before you use it
+ */
+- (void)extensionDidFinishInitial;
+
 @end

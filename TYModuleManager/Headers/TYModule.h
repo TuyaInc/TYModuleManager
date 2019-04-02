@@ -22,6 +22,8 @@
 #import "TYModuleNotifyRegisterProtocol.h"
 #import "TYModuleLaunchTaskRegisterProtocol.h"
 
+#import "TYModuleLifeCycleCallbackProtocol.h"
+
 
 #define TY_ServiceImpl(prot) ((id<prot>)[TYModule serviceOfProtocol:@protocol(prot)])
 
