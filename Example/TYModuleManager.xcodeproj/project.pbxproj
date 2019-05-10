@@ -67,7 +67,6 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A523C07FF5CC260EB9CD33F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AAD8933F5126D2F6C11118EE /* Pods-TYModuleManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYModuleManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYModuleManager_Example/Pods-TYModuleManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CBEE9F2A79DCE1F7AD429CBD /* TYModuleManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TYModuleManager.podspec; path = ../TYModuleManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F57D858B20B55B0B0094EEDE /* TY_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TY_Example-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -239,7 +238,6 @@
 			children = (
 				CBEE9F2A79DCE1F7AD429CBD /* TYModuleManager.podspec */,
 				FF83830B295D8CB5B84C8A83 /* README.md */,
-				A523C07FF5CC260EB9CD33F4 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
