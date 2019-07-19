@@ -12,6 +12,16 @@
 
 @implementation TYTestApplication
 
+- (UIWindow *)window {
+    if (![UIApplication sharedApplication].delegate.window) {
+        UIWindow *win = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        win.backgroundColor = [UIColor whiteColor];
+        [UIApplication sharedApplication].delegate.window = win;
+    }
+    return [UIApplication sharedApplication].delegate.window;
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions config:(id<TYModuleConfigBlueprint>)config {
     
     [self reloadRootViewController];

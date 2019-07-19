@@ -42,7 +42,7 @@
     // 完全自定义tabButton ↓↓↓↓↓↓
     
     // 创建一个button用于tabItemButton，此处使用UIButton，实际只要是UIControl或其子类就行
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    TYTabBarCustomButton *button = [[TYTabBarCustomButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
     button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     button.contentHorizontalAlignment= UIControlContentHorizontalAlignmentFill;
     button.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;

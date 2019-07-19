@@ -6,9 +6,9 @@
 //  Copyright © 2018 Tuya. All rights reserved.
 //
 
-#import "TYModuleApplication.h"
+#import "TYModuleApplicationBlueprint.h"
 
-@interface TYTestApplication : TYModuleApplication
+@interface TYTestApplication : NSObject<TYModuleApplicationBlueprint>
 
 @end
 
