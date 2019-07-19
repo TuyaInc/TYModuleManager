@@ -15,17 +15,19 @@
 #import "TYModuleNotifyBlueprint.h"
 #import "TYModuleLaunchTaskBlueprint.h"
 
+#import "TYModuleRegisterProtocol.h"
 
-#import "TYModuleServiceRegisterProtocol.h"
-#import "TYModuleRouteRegisterProtocol.h"
-#import "TYModuleTabRegisterProtocol.h"
-#import "TYModuleNotifyRegisterProtocol.h"
-#import "TYModuleLaunchTaskRegisterProtocol.h"
-
-#import "TYModuleLifeCycleCallbackProtocol.h"
-
+// 一个用来提供涂鸦的Native方法的调用的类
+#import "TYModuleMixBridge.h"
 
 #define TY_ServiceImpl(prot) ((id<prot>)[TYModule serviceOfProtocol:@protocol(prot)])
+
+#define TY_RouteService [TYModule routeService]
+#define TY_ApplicationService [TYModule applicationService]
+#define TY_TabService [TYModule tabService]
+#define TY_NotifyService [TYModule notifyService]
+#define TY_ConfigService [TYModule configService]
+
 
 /**
  TYModule类主要用于提供一些快捷的方法，便于书写

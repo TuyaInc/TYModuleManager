@@ -11,6 +11,7 @@
 
 @protocol TYModuleLaunchTaskRegisterProtocol <NSObject>
 
+@optional
 - (NSArray<Class<TYLaunchTaskProtocol>> *)registLaunchTasks;
 
 @end

@@ -11,6 +11,7 @@
 
 @protocol TYModuleServiceRegisterProtocol <NSObject>
 
+@optional
 - (NSArray<TYModuleServiceInfo *> *)registModuleServices;
 
 @end

@@ -48,6 +48,16 @@
 
 
 /**
+ value for specified key path in the original data
+ key path like that is supported :
+ a_path    a_path.sub_path     a_path.[2].sub_path
+ 
+ 根据所给keyPath，在originalData中查找并返回数据
+ 支持点语法 xxx.xxx  支持数组 xxx.[2].xxx
+ */
+- (id)configValueForKeyPath:(NSString *)keyPath;
+
+/**
  the class that find out by the module name
  eg. input: @"TestModule"  return: TestModuleImpl or TestModule class
  
@@ -56,7 +66,7 @@
 - (nullable Class)validClassOfConfigClass:(nonnull NSString *)moduleName;
 
 /**
- the class which match the key path in the original data
+ class for specified key path in the original data
  key path like that is supported :
  a_path    a_path.sub_path     a_path.[2].sub_path
  

@@ -2,7 +2,7 @@
 //  TYModuleLifeCycleCallbackProtocol.h
 //  TYModuleManager
 //
-//  Created by Pany on 2019/3/7.
+//  Created by TuyaInc on 2019/3/7.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  if you need any callback in this protocol
- use <TYModuleLifeCycleCallbackProtocol> or [TYModule notifyService] to regist
+ use - (NSArray<NSString *> *)registRespondsNotifies or [TYModule notifyService] to regist
  */
 @protocol TYModuleLifeCycleCallbackProtocol <NSObject>
 

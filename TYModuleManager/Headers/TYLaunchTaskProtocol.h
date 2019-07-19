@@ -13,6 +13,11 @@ typedef enum : NSUInteger {
     // 在主线程串行由于对启动时间影响较大，为内部保留类型，有需要请打call
 } TYLaunchTaskRunMode;
 
+typedef enum : NSUInteger {
+    TYLaunchTaskPriority_Low = 250,
+    TYLaunchTaskPriority_Default = 750,
+    TYLaunchTaskPriority_Hight = 1000,
+} TYLaunchTaskPriority;
 
 
 @protocol TYLaunchTaskProtocol <NSObject>
@@ -29,25 +34,9 @@ typedef enum : NSUInteger {
  */
 + (TYLaunchTaskRunMode)runMode;
 
-/*
- 依赖的task  禁止跨runMode依赖
+/**
+ 优先级，默认为 TYLaunchTaskPriority_Default
  */
-+ (NSArray<Class<TYLaunchTaskProtocol>> *)dependencyList;
-
-
-/*
- 依赖的某个task执行完毕
- */
-- (void)dependencyFinished:(NSObject<TYLaunchTaskProtocol> *)task;
-
-/*
- 标识符
- */
-- (NSString *)taskName;
-
-/*
- 用于task间简单通信
- */
-- (NSDictionary *)userInfo;
++ (TYLaunchTaskPriority)priority;
 
 @end

@@ -7,12 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
+#define TYNotifyName(sel) NSStringFromSelector(@selector(sel))
+
 @protocol TYModuleNotifyRegisterProtocol <NSObject>
 
+@optional
 /**
  返回本模块能响应的通知方法名
  
- @return NSArray<SEL>
+ @return @[NSStringFromSelector(@selector(xxx))] / @[TYNotifyName(xxx)]
  */
 - (NSArray<NSString *> *)registRespondsNotifies;
 

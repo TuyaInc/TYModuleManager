@@ -9,6 +9,7 @@
 
 @protocol TYModuleRouteRegisterProtocol <NSObject>
 
+@optional
 // 注册路由
 - (NSArray<NSString *> *)registModuleRoutes;
 // 处理路由事件

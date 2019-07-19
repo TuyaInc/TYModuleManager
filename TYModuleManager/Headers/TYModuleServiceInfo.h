@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Available base on TuyaSmart 3.9.0 +
  */
-extern TYModuleServiceInfo * TYModuleServiceInfoMake(Protocol *protocol, Class implCls);
+FOUNDATION_EXTERN TYModuleServiceInfo * TYModuleServiceInfoMake(Protocol *protocol, Class implCls);
 
 @interface TYModuleServiceInfo : NSObject <NSCopying>
 
