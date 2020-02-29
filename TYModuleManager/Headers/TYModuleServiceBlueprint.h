@@ -19,9 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)registService:(TYModuleServiceInfo *)serviceInfo;
 - (void)unregistServiceOfProtocol:(Protocol *)protocol;
 
+/**
+ service impl of protocol
+ */
 - (nullable id)serviceOfProtocol:(Protocol *)protocol;
-- (nullable TYModuleServiceInfo *)serviceInfoOfProtocol:(Protocol *)protocol;
 
+/**
+ service info of protocol
+ */
+- (nullable TYModuleServiceInfo *)serviceInfoOfProtocol:(Protocol *)protocol;
 
 // 以下方法主要用来保证module的实例是单例，避免反复创建
 - (nullable id)implOfModuleClass:(Class)cls;

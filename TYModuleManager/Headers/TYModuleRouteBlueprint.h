@@ -23,8 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable id)moduleOfRoute:(NSString *)route;
 
+
+- (BOOL)canOpenRoute:(NSString *)route;
+
 /**
- scheme、path、query will pass to the handle impl
+ scheme、path、query will passthrough to the handle impl
  */
 - (BOOL)openRoute:(NSString *)route withParams:(nullable NSDictionary *)params;
 

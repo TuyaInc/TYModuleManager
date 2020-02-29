@@ -37,7 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)tabBarCanSelect:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
 /**
- 用户点击tab后，是否允许展示对应vc
+ 用户点击tab后，是否允许展示对应vc，每次点击均有回调
+ 返回NO则会打断点击流程， -tabBarDidSelect:withItemAttribute: 方法将会无回调
  */
 - (BOOL)tabBarShouldShow:(nullable UIViewController *)controller withItemAttribute:(TYTabItemAttribute *)attribute;
 
